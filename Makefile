@@ -1564,7 +1564,7 @@ endif
 
 endif
 
-USER_MODULE_NAME ?=
+USER_MODULE_NAME ?= 
 ifneq ($(USER_MODULE_NAME),)
 MODULE_NAME := $(USER_MODULE_NAME)
 endif
@@ -1623,7 +1623,7 @@ ifeq ($(CONFIG_RTL8821A), y)
 $(MODULE_NAME)-$(CONFIG_MP_INCLUDED)+= core/rtw_bt_mp.o
 endif
 
-obj-$(CONFIG_RTL8812AU) := $(MODULE_NAME).o
+obj-m := 8812au.o
 
 else
 
